@@ -6,9 +6,9 @@ use Symfony\Component\HttpFoundation\Response AS Response;
 
 class ResponseController
 {
-    static public function success($result)
+    static public function success($result, $code = 200)
     {
-        return self::response(200, $result);
+        return self::response($code, $result);
     }
 
 
