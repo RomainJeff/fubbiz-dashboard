@@ -46,3 +46,9 @@ $app->get(
     '/update',
     "Fubbiz\Controller\UpdateController::saveAction"
 );
+
+
+// $app->get(
+//     '/fix',
+//     "Fubbiz\Controller\UpdateController::fixAction"
+// );
