@@ -33,11 +33,16 @@ $app->get(
 );
 
 
+#------------------------------#
+#------------------------------#
+
+
+/**
+ *
+ * UPDATE ROUTES
+ *
+ */
 $app->get(
-    '/stats/{usernames}/{date_start}/{date_end}',
-    "Fubbiz\Controller\StatsController::getIntervalAction"
+    '/update',
+    "Fubbiz\Controller\UpdateController::saveAction"
 );
-
-
-#------------------------------#
-#------------------------------#
