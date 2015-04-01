@@ -7,6 +7,8 @@
  *
  *
  **/
+date_default_timezone_set('Europe/Paris');
+
 
 // On inclue la configuration MySQL de production
 require_once __DIR__ ."/config/mysql/prod.php";
