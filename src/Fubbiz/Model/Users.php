@@ -21,9 +21,9 @@ class Users
      */
     public function listing()
     {
-        $sqlQuery = "SELECT oeuvre_id, username FROM datas WHERE date = ? AND hour = ?";
+        $sqlQuery = "SELECT oeuvre_id, username FROM datas GROUP BY username";
 
-        return $this->db->fetchAll($sqlQuery, [date('d-m-Y'), date('H')]);
+        return $this->db->fetchAll($sqlQuery);
     }
 
 
